@@ -1,0 +1,28 @@
+<%- include('./layouts/header') %>
+    <div class="card col col-8 offset-2 mt-3">
+        <div class="card-header text-center">Iniciar Sesion</div>
+        <div class="card-body">
+            <form method="POST" action="/login">
+                <div class="row">
+                    <label for="username" class="col col-4 offset-2">Nombre de Usuario</label>
+                    
+                    <input class="col col-4" id="username" type="text" name="username" required>
+                </div>
+
+                <div class="row mt-3">
+                    <label for="password" class="col col-4 offset-2">Contraseña</label>
+                    
+                    <input class="col col-4" id="password" type="password" name="password" required>
+                </div>
+
+                <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-success" type="submit">Iniciar Sesion</button>
+                </div>
+                <div>
+                    ¿No tienes cuenta? Registrate <a class="btn btn-link" href="/register">Aqui</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<%- include('./layouts/footer') %>
